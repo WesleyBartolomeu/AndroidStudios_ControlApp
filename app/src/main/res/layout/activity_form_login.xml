@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundodetelaimg"
+    tools:context=".FormLogin">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="206dp"
+        android:layout_height="178dp"
+        android:src="@drawable/Logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/text_logo"
+        style="@style/text_logo"
+        android:layout_width="160dp"
+        android:layout_height="83dp"
+        android:layout_marginBottom="16dp"
+        android:textColorHint="@color/white"
+        android:background="@null"
+        android:hint="     Bem Vindo!Faça Login para continuar"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toTopOf="@id/ContainerComponents"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <View
+        android:id="@+id/ContainerComponents"
+        style="@style/ContainerComponents"
+        android:layout_width="349dp"
+        android:layout_height="254dp"
+        app:layout_constrainStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="278dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/edit_email"
+        style="@style/Edit_Text"
+        android:hint="E-mail"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="17dp"
+        app:layout_constraintEnd_toEndOf="@+id/ContainerComponents"
+        app:layout_constraintEnd_toStartOf="@+id/ContainerComponents"
+        app:layout_constraintTop_toTopOf="@+id/ContainerComponents" />
+
+    <EditText
+        android:id="@+id/edit_senha"
+        style="@style/Edit_Text"
+        android:hint="Senha"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="17dp"
+        app:layout_constraintEnd_toEndOf="@+id/ContainerComponents"
+        app:layout_constraintEnd_toStartOf="@+id/ContainerComponents"
+        app:layout_constraintTop_toBottomOf="@+id/edit_email" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <Button
+        android:id="@+id/buttonlogin"
+        style="@style/Button"
+        android:hint="Login"
+        android:textColorHint="@color/white"
+        android:textSize="19dp"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_email"
+        />
+
+    <EditText
+        android:id="@+id/recover_password"
+        style="@style/text_white"
+        android:background="@null"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonlogin"
+        android:hint="Esqueceu a Senha? Clique aqui"
+        android:paddingLeft="40dp"
+        android:paddingTop="10dp"
+        android:textSize="11dp"
+        ></EditText>
+
+    <EditText
+        style="@style/text_white_medio"
+        android:background="@null"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recover_password"
+        android:hint="Ainda não possui conta?"
+        android:paddingTop="25dp"
+        android:textSize="14dp"
+        ></EditText>
+
+    <View
+        style="@style/ContainerComponents"
+        android:id="@+id/ContainerComponents2"
+        android:layout_width="349dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@+id/ContainerComponents"
+        tools:layout_editor_absoluteX="31dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/Edit_google"
+        android:drawableLeft="@drawable/Logo_google_min"
+        style="@style/buttonblue"
+        android:layout_width="match_parent"
+        android:textColorHint="@color/white"
+        android:hint="           Cadastrar com conta Google"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/ContainerComponents"
+        app:layout_constraintEnd_toStartOf="@+id/ContainerComponents"
+        app:layout_constraintTop_toTopOf="@+id/ContainerComponents2" />
+
+    <EditText
+        android:id="@+id/text_tela_cadastro"
+        style="@style/buttonblue"
+        android:layout_marginTop="60dp"
+        android:drawableLeft="@drawable/Logo_arroba"
+        android:hint="                Cadastrar com E-mail"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/ContainerComponents"
+        app:layout_constraintEnd_toStartOf="@+id/ContainerComponents"
+        app:layout_constraintTop_toTopOf="@+id/Edit_google"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

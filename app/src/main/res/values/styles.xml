@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ContainerComponents">
+        <item name="android:layout_width"> 290dp</item>
+        <item name="android:layout_height"> 250dp</item>
+        <item name="android:background">@drawable/container_components</item>
+    </style>
+
+    <style name="Edit_Text" >
+        <item name="android:textSize">15dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">47dp</item>
+        <item name="android:background">@drawable/edit_text</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:layout_marginLeft">34dp</item>
+        <item name="android:layout_marginRight">34dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+    </style>
+    
+    <style name="Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">115dp</item>
+        <item name="android:layout_marginRight">115dp</item>
+        <item name="android:layout_marginTop">74dp</item>
+        <item name="android:background">@drawable/button</item>
+
+    </style>
+
+    <style name="text_white">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">150dp</item>
+        <item name="android:layout_marginRight">100dp</item>
+    </style>
+
+
+    <style name="recover_password">
+        <item name="android:layout_marginLeft">125dp</item>
+    </style>
+
+    <style name="text_white_medio">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_marginLeft">125dp</item>
+    <item name="android:layout_marginRight">125dp</item>
+    </style>
+
+    <style name="text_logo">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_marginLeft">120dp</item>
+    <item name="android:layout_marginRight">120dp</item>
+    </style>
+
+    <style name="buttonblue">
+        <item name="android:textSize">15dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">47dp</item>
+        <item name="android:background">@drawable/buttonblue</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:layout_marginLeft">34dp</item>
+        <item name="android:layout_marginRight">34dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+    </style>
+
+
+
+
+
+
+
+</resources>

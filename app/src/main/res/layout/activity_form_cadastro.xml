@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundodetelaimg"
+    tools:context=".FormCadastro"
+    tools:ignore="ExtraText">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="206dp"
+        android:layout_height="178dp"
+        android:src="@drawable/Logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/title"
+        style="@style/text_logo"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:textColorHint="@color/white"
+        android:hint="      Cadastre-se:"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="178dp"
+        android:background="@null"
+        android:textSize="19dp"/>
+
+
+    <View
+        android:id="@+id/lawyoutcadastro"
+        style="@style/ContainerComponents"
+        android:layout_width="349dp"
+        android:layout_height="380dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        ></View>
+
+    <EditText
+        android:id="@+id/nome"
+        style="@style/Edit_Text"
+        android:hint="Nome"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="17dp"
+        app:layout_constraintTop_toTopOf="@+id/lawyoutcadastro" />
+    <EditText
+        android:id="@+id/data_de_nascimento"
+        style="@style/Edit_Text"
+        android:hint="Data de Nascimento"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="17dp"
+        app:layout_constraintEnd_toEndOf="@+id/lawyoutcadastro"
+        app:layout_constraintTop_toBottomOf="@+id/nome"
+        />
+
+    <EditText
+        android:id="@+id/profissão"
+        style="@style/Edit_Text"
+        android:hint="Profissão"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="17dp"
+        app:layout_constraintEnd_toEndOf="@+id/lawyoutcadastro"
+        app:layout_constraintTop_toBottomOf="@+id/data_de_nascimento"
+        />
+    <EditText
+        android:id="@+id/e_mail"
+        style="@style/Edit_Text"
+        android:hint="E-mail"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="17dp"
+        app:layout_constraintEnd_toEndOf="@+id/lawyoutcadastro"
+        app:layout_constraintTop_toBottomOf="@+id/profissão"
+        />
+    <EditText
+        android:id="@+id/senha"
+        style="@style/Edit_Text"
+        android:hint="Senha"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="17dp"
+        app:layout_constraintEnd_toEndOf="@+id/lawyoutcadastro"
+        app:layout_constraintTop_toBottomOf="@+id/e_mail"
+        />
+    <EditText
+        android:id="@+id/senha_confirm"
+        style="@style/Edit_Text"
+        android:hint="Confirme sua Senha"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="17dp"
+        app:layout_constraintEnd_toEndOf="@+id/lawyoutcadastro"
+        app:layout_constraintTop_toBottomOf="@+id/senha"
+        />
+
+    <Button
+        android:id="@+id/buttonlogin"
+        style="@style/Button"
+        android:layout_marginTop="16dp"
+        android:hint="Cadastre-se"
+        android:textColorHint="@color/white"
+        android:textSize="19dp"
+        app:layout_constraintTop_toBottomOf="@+id/senha_confirm"
+        tools:layout_editor_absoluteX="103dp" />
+
+    <EditText
+        style="@style/text_white_medio"
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:background="@null"
+        android:hint="Ao utilizar o ControlApp, você está de acordo com nossos Termos de Uso e Aviso de Privacidade."
+        android:paddingTop="10dp"
+        android:textColorHint="@color/white"
+        android:textSize="9dp"
+        app:layout_constraintTop_toBottomOf="@+id/buttonlogin"
+        tools:layout_editor_absoluteX="134dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
